@@ -7,12 +7,24 @@ const Typography = createGlobalStyle`
 	}
 
 	h1 {
-		font-size: 2rem;
-		line-height: 3rem;
+		font-size: 3rem;
+		line-height: 4rem;
+		margin: 0;
+
+		@media (max-width: 580px) {
+			line-height: 2rem;
+			text-align: center;
+		}
 	}
 
 	h2 {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
+		margin: 0;
+
+		@media (max-width: 580px) {
+			margin-top: 1rem;
+			text-align: center;
+		}
 	}
 `;
 

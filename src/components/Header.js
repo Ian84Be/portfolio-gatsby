@@ -1,20 +1,12 @@
 import React, { useContext } from 'react';
 import { LightContext } from '../context/LightContext';
+import Container from '../styles/Container';
 import styled from 'styled-components';
 
 import githubLight from '../assets/images/GitHub-Mark-Light-64px.png';
 import lambdaLogo from '../assets/images/lambda-new.png';
 import linkedInLogo from '../assets/images/LI-In-Bug.png';
 import profilePic from '../assets/images/Ian_Portrait_circle.png';
-
-const Container = styled.div`
-  align-items: center;
-  background: ${(props) =>
-    props.lightMode ? 'var(--light-bg)' : 'var(--dark-bg)'};
-  display: flex;
-  justify-content: center;
-  width: 100%;
-`;
 
 const Body = styled.div`
   align-items: center;
@@ -79,41 +71,14 @@ const ProfilePic = styled.img`
   }
 `;
 
-const MyName = styled.h1`
-  margin: 0;
-
-  @media (max-width: 580px) {
-    line-height: 2rem;
-    text-align: center;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-`;
-
-const MyTitle = styled.h2`
-  margin: 0;
-
-  @media (max-width: 580px) {
-    margin-top: 1rem;
-    text-align: center;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: 1.3rem;
-  }
-`;
-
 export default function Header() {
   const { lightMode, toggleLightMode } = useContext(LightContext);
   return (
     <Container lightMode={lightMode}>
       <Body>
         <LeftSide role="banner">
-          <MyName>Ian Belknap</MyName>
-          <MyTitle>Software Engineer</MyTitle>
+          <h1>Ian Belknap</h1>
+          <h2>Software Engineer</h2>
 
           <IconRow>
             <a href="https://lambdaschool.com/">

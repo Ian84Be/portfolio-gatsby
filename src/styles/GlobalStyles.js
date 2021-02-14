@@ -15,7 +15,8 @@ const GlobalStyles = createGlobalStyle`
 		--light-text: hsla(212, 26%, 8%, 1);
 		--light-btn-shadow: hsla(212, 66%, 23%, 1);
 	}
-	html {
+	
+	body {
 		background: ${(props) =>
       props.lightMode ? 'var(--light-bg)' : 'var(--dark-bg)'};
 		color: ${(props) =>
