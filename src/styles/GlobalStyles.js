@@ -19,8 +19,6 @@ const GlobalStyles = createGlobalStyle`
 	}
 	
 	body {
-		/* background: ${(props) =>
-      props.lightMode ? 'var(--light-bg)' : 'var(--dark-bg)'}; */
 		background: var(--dark-bg);
 		color: ${(props) =>
       props.lightMode ? 'var(--light-text)' : 'var(--dark-text)'};

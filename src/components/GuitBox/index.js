@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { breakpoints } from '../../styles/_breakpoints';
 
 import Audio from './Audio';
 import Keys from './Keys';
@@ -8,21 +7,14 @@ import Controls from './Controls';
 
 const GuitBoxContainer = styled.div`
   align-items: center;
-  background: rgba(238, 114, 0, 1);
+  background: ${({ lightMode }) =>
+    lightMode ? 'var(--light-bg)' : 'var(--alert-orange)'};
   border-radius: 8px;
   color: var(--dark-text);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
-
-  /* @media (max-width: ${breakpoints.small}) {
-    width: 100%;
-  } */
-
-  &.lightMode {
-    @include lightMode-altBG();
-  }
 `;
 
 export default function GuitBox({ lightMode }) {

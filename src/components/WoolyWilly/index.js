@@ -5,12 +5,9 @@ import projectImage from '../../assets/images/WoolyWilly.jpg';
 import Controls from './Controls';
 
 const WoolyWillyContainer = styled.div`
-  background: rgba(238, 114, 0, 1);
+  background: ${({ lightMode }) =>
+    lightMode ? 'var(--light-bg)' : 'var(--alert-orange)'};
   border-radius: 8px;
-  &.lightMode {
-    /* @include lightMode-altBG(); */
-    border-radius: 8px;
-  }
   max-width: 500px;
   padding: 1rem;
 `;
@@ -88,7 +85,7 @@ class WoolyWilly extends React.Component {
   render() {
     const { brush, hidden, hue } = this.state;
     return (
-      <WoolyWillyContainer>
+      <WoolyWillyContainer lightMode={this.props.lightMode}>
         <Body>
           <img
             src={projectImage}
