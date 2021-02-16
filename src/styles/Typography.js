@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { breakpoints } from './_breakpoints';
 
 const Typography = createGlobalStyle`
 	html {
@@ -11,7 +12,7 @@ const Typography = createGlobalStyle`
 		line-height: 4rem;
 		margin: 0;
 
-		@media (max-width: 580px) {
+		@media (max-width: ${breakpoints.small}) {
 			line-height: 2rem;
 			text-align: center;
 		}
@@ -21,10 +22,17 @@ const Typography = createGlobalStyle`
 		font-size: 1.3rem;
 		margin: 0;
 
-		@media (max-width: 580px) {
+		@media (max-width: ${breakpoints.small}) {
 			margin-top: 1rem;
 			text-align: center;
 		}
+	}
+
+	p {
+		font-size: 1rem;
+		line-height: 1.8rem;
+		letter-spacing: 0.03rem;
+		margin-bottom: 3rem;
 	}
 `;
 

@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 	:root {
+		--alert-green: hsla(120, 86%, 50%, 1);
+		--alert-orange: rgba(238, 114, 0, 1);
 		--black: hsla(261, 33%, 0%, 1);
 
 		--dark-bg: hsla(260, 38%, 3%, 1);
@@ -17,10 +19,12 @@ const GlobalStyles = createGlobalStyle`
 	}
 	
 	body {
-		background: ${(props) =>
-      props.lightMode ? 'var(--light-bg)' : 'var(--dark-bg)'};
+		/* background: ${(props) =>
+      props.lightMode ? 'var(--light-bg)' : 'var(--dark-bg)'}; */
+		background: var(--dark-bg);
 		color: ${(props) =>
       props.lightMode ? 'var(--light-text)' : 'var(--dark-text)'};
+			transition: color 0.5s ease-in;
 	}
 `;
 
