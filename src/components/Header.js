@@ -1,7 +1,10 @@
 import React, { useContext } from 'react';
-import { LightContext } from '../context/LightContext';
-import Container from '../styles/Container';
 import styled from 'styled-components';
+
+import { LightContext } from '../context/LightContext';
+import { Container } from '../styles/Container';
+import { breakpoints } from '../styles/_breakpoints';
+import LightModeSwitch from '../components/LightModeToggle';
 
 import githubLight from '../assets/images/GitHub-Mark-Light-64px.png';
 import lambdaLogo from '../assets/images/lambda-new.png';
@@ -15,8 +18,7 @@ const Body = styled.div`
   justify-content: space-between;
   max-width: 800px;
   padding: 4rem;
-
-  @media (max-width: 580px) {
+  @media (max-width: ${breakpoints.small}) {
     flex-direction: column-reverse;
   }
 `;
@@ -25,22 +27,23 @@ const LeftSide = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 8px;
-
-  @media (max-width: 580px) {
+  @media (max-width: ${breakpoints.small}) {
     align-items: center;
     margin: 0;
   }
 `;
 
 const IconRow = styled.div`
+  display: flex;
+  align-items: center;
   margin-top: 0.5rem;
   img {
     cursor: pointer;
     margin: 8px;
+    transition: transform 0.3s ease-in;
     width: 30px;
-    transition: all 0.5s ease;
     &:hover {
-      transform: scale(1.1) rotate(5deg);
+      transform: scale(1.3) rotate(5deg);
     }
   }
   img.lambda {
@@ -54,8 +57,7 @@ const IconRow = styled.div`
 const RightSide = styled.div`
   margin-left: 16px;
   padding: 16px;
-
-  @media (max-width: 580px) {
+  @media (max-width: ${breakpoints.small}) {
     margin: 0;
   }
 `;
@@ -105,6 +107,7 @@ export default function Header() {
                 src={linkedInLogo}
               />
             </a>
+            <LightModeSwitch />
           </IconRow>
         </LeftSide>
 

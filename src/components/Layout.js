@@ -3,6 +3,8 @@ import { LightContext } from '../context/LightContext';
 import 'normalize.css';
 import GlobalStyles from '../styles/GlobalStyles';
 import Header from './Header';
+import ToyBox from './ToyBox';
+import Footer from './Footer';
 import Typography from '../styles/Typography';
 
 export default function Layout({ children }) {
@@ -14,6 +16,8 @@ export default function Layout({ children }) {
 
       <Header />
       {children}
+      <ToyBox />
+      <Footer />
     </>
   );
 }
