@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import { LightContext } from '../context/LightContext';
 import { GradientContainer } from '../styles/Container';
-import { noSelect } from '../styles/_mixins';
 import { breakpoints } from '../styles/_breakpoints';
 
 const Body = styled.div`
@@ -21,11 +20,6 @@ const Body = styled.div`
 
 const AboutSection = styled.section`
   margin: 1rem 0;
-`;
-
-const AboutHeader = styled.p`
-  font-size: 1.5rem;
-  line-height: 2.5rem;
 `;
 
 const LastParagraph = styled.p`
@@ -58,21 +52,8 @@ const Pizza = styled(Emoji)`
   }
 `;
 
-const YinYang = styled(Emoji)`
-  ${noSelect}
-  cursor: pointer;
-  margin-top: 2rem;
-  @media (max-width: ${breakpoints.small}) {
-    display: flex;
-  }
-  &:hover {
-    transform: rotate(90deg);
-    transition: transform 0.5s ease-out;
-  }
-`;
-
 const IndexPage = () => {
-  const { lightMode, toggleLightMode } = useContext(LightContext);
+  const { lightMode } = useContext(LightContext);
   const [pizza, setPizza] = useState(false);
   const [spider, setSpider] = useState(false);
   const [openBook, setOpenBook] = useState(false);
@@ -163,7 +144,7 @@ const IndexPage = () => {
 
           <p>
             Over the past year I have learned an esoteric programming language
-            (PowerOn), and used it to automate processes which saved over 300
+            (PowerOn), and used it to automate processes which saved over 750
             hours of manual labor. I also worked with SQL and SSRS to create
             custom reporting for departmental stakeholders. When a vendor
             contract for “LobbyTracking” software was due to expire, I was named
@@ -177,13 +158,6 @@ const IndexPage = () => {
           <LastParagraph>
             When I am not staring into screens: <br />I like to play guitar,
             cook food, and read books, sometimes in that exact order.
-            {/* <YinYang
-              aria-label="yin yang"
-              role="button"
-              onClick={toggleLightMode}
-            >
-              ☯
-            </YinYang> */}
           </LastParagraph>
         </AboutSection>
       </Body>
