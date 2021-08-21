@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import styled from 'styled-components';
+import SEO from '../components/SEO';
 import '@fontsource/montserrat';
 
 import { LightContext } from '../context/LightContext';
@@ -61,6 +62,10 @@ const IndexPage = () => {
 
   return (
     <GradientContainer lightMode={lightMode}>
+      <SEO
+        title="Ian Belknap - Software Engineer"
+        description="Portfolio 2021"
+      />
       <Body>
         <AboutSection>
           <header>Hello World!</header>
