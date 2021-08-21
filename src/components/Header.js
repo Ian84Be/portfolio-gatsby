@@ -9,7 +9,7 @@ import LightModeSwitch from '../components/LightModeToggle';
 import githubLight from '../assets/images/GitHub-Mark-Light-64px.png';
 import lambdaLogo from '../assets/images/lambda-new.png';
 import linkedInLogo from '../assets/images/LI-In-Bug.png';
-import profilePic from '../assets/images/Ian_Portrait_circle_150.png';
+import profilePic from '../assets/images/Ian_Portrait_circle_300.png';
 
 const Body = styled.div`
   align-items: center;
@@ -48,11 +48,11 @@ const IconRow = styled.div`
     }
   }
   img.lambda {
-    height: 29.9062px;
-    width: 25px;
+    height: 30px;
+    width: 28px;
   }
   img.linkedin {
-    height: 29.75px;
+    height: 30px;
     width: 35px;
   }
 `;
