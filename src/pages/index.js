@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import styled from 'styled-components';
+import '@fontsource/montserrat';
 
 import { LightContext } from '../context/LightContext';
 import { GradientContainer } from '../styles/Container';
