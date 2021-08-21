@@ -41,6 +41,7 @@ const IconRow = styled.div`
   img {
     cursor: pointer;
     margin: 0 0.25rem;
+    height: 1.5rem;
     width: 1.5rem;
     &:hover {
       transform: scale(1.3) rotate(5deg);
