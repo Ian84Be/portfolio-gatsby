@@ -41,15 +41,18 @@ const IconRow = styled.div`
     cursor: pointer;
     margin: 8px;
     transition: transform 0.3s ease-in;
+    height: 30px;
     width: 30px;
     &:hover {
       transform: scale(1.3) rotate(5deg);
     }
   }
   img.lambda {
+    height: 29.9062px;
     width: 25px;
   }
   img.linkedin {
+    height: 29.75px;
     width: 35px;
   }
 `;
@@ -66,6 +69,7 @@ const ProfilePic = styled.img`
   border-radius: 50%;
   transition: all 0.5s ease;
   opacity: ${(props) => (props.lightMode ? 1 : 0.77)};
+  height: 150px;
   width: 150px;
   &:hover {
     transform: scale(1.1) rotate(-5deg);

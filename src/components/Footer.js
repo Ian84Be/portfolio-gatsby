@@ -48,7 +48,8 @@ const IconRow = styled.div`
   }
 
   img.linkedin {
-    width: 1.8rem;
+    height: 24.4844px;
+    width: 28.7969px;
   }
 `;
 

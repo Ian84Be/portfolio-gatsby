@@ -13,7 +13,7 @@ const Typography = createGlobalStyle`
 		margin: 0;
 
 		@media (max-width: ${breakpoints.small}) {
-			line-height: 2rem;
+			line-height: 3rem;
 			text-align: center;
 		}
 	}
