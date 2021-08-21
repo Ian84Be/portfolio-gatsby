@@ -9,7 +9,7 @@ import LightModeSwitch from '../components/LightModeToggle';
 import githubLight from '../assets/images/GitHub-Mark-Light-64px.png';
 import lambdaLogo from '../assets/images/lambda-new.png';
 import linkedInLogo from '../assets/images/LI-In-Bug.png';
-import profilePic from '../assets/images/Ian_Portrait_circle.png';
+import profilePic from '../assets/images/Ian_Portrait_circle_150.png';
 
 const Body = styled.div`
   align-items: center;
