@@ -56,10 +56,6 @@ const Pizza = styled(Emoji)`
 
 const IndexPage = () => {
   const { lightMode } = useContext(LightContext);
-  const [pizza, setPizza] = useState(false);
-  const [spider, setSpider] = useState(false);
-  const [openBook, setOpenBook] = useState(false);
-
   return (
     <GradientContainer lightMode={lightMode}>
       <SEO
@@ -73,101 +69,75 @@ const IndexPage = () => {
             I am a software engineer with a passion for web development, simple
             UI, and all things JavaScript.
           </p>
-
-          {spider ? (
-            <Emoji
-              role="img"
-              aria-label="spider"
-              onMouseOut={() => setSpider(false)}
-            >
-              🕷
-            </Emoji>
-          ) : (
-            <Emoji
-              role="img"
-              aria-label="spider web"
-              onMouseOver={() => setSpider(true)}
-            >
-              🕸
-            </Emoji>
-          )}
-
-          <p>
-            I have been interested in internet technologies for a long time. One
-            of my earliest memories is that of my father and my brother talking
-            about the World Wide Web, they had just bought a computer and set it
-            up in our basement, their faces glowing with an excitement I could
-            not understand. The world wide web. I imagined a giant spider, but
-            what does it have to do with that beige colored television?
-          </p>
-
-          {pizza ? (
-            <Pizza
-              role="img"
-              aria-label="pizza"
-              onMouseOut={() => setPizza(false)}
-            >
-              🍕
-            </Pizza>
-          ) : (
-            <Emoji
-              role="img"
-              aria-label="laptop"
-              onMouseOver={() => setPizza(true)}
-            >
-              💻
-            </Emoji>
-          )}
-
-          <p>
-            My professional career started by enrolling as a full-time student
-            at Lambda School. I was also hired by Lambda School to be a Team
-            Lead. My role was to manage, and mentor a group of new students
-            through their first 16 weeks of learning. After a year of study I
-            applied for my first software engineering job, and was quickly hired
-            by Gulf Winds Credit Union. I am grateful to Lambda School for
-            delivering exactly what they promised, and to Gulf Winds for giving
-            me the opportunity to start a new career.
-          </p>
-
-          {openBook ? (
-            <Emoji
-              role="img"
-              aria-label="open book"
-              onMouseOut={() => setOpenBook(false)}
-            >
-              📖
-            </Emoji>
-          ) : (
-            <Emoji
-              role="img"
-              aria-label="blue book"
-              onMouseOver={() => setOpenBook(true)}
-            >
-              📘
-            </Emoji>
-          )}
-
-          <p>
-            Over the past year I have learned an esoteric programming language
-            (PowerOn), and used it to automate processes which saved over 750
-            hours of manual labor. I also worked with SQL and SSRS to create
-            custom reporting for departmental stakeholders. When a vendor
-            contract for “LobbyTracking” software was due to expire, I was named
-            tech lead for an internal development project and tasked to build a
-            replacement within 6 months. Using React, Express, Postgres, and
-            working alongside 1 other engineer, we were able to deliver all
-            features as promised: on deadline. Our work allowed the credit union
-            to cancel a contract which was costing them $40k annually.
-          </p>
-
-          <LastParagraph>
-            When I am not staring into screens: <br />I like to play guitar,
-            cook food, and read books, sometimes in that exact order.
-          </LastParagraph>
+          <AboutText />
         </AboutSection>
       </Body>
     </GradientContainer>
+  );
+};
+
+const AboutText = () => {
+  const [pizza, setPizza] = useState(false);
+  const [spider, setSpider] = useState(false);
+  return (
+    <>
+      {spider ? (
+        <Emoji
+          role="img"
+          aria-label="spider"
+          onMouseOut={() => setSpider(false)}
+        >
+          🕷
+        </Emoji>
+      ) : (
+        <Emoji
+          role="img"
+          aria-label="spider web"
+          onMouseOver={() => setSpider(true)}
+        >
+          🕸
+        </Emoji>
+      )}
+
+      <p>
+        I have been interested in internet technologies for a long time. One of
+        my earliest memories is that of my father and my brother talking about
+        the World Wide Web, they had just bought a computer and set it up in our
+        basement, their faces glowing with an excitement I could not understand.
+        The world wide web. I imagined a giant spider, but what does it have to
+        do with that beige colored television?
+      </p>
+
+      {pizza ? (
+        <Pizza role="img" aria-label="pizza" onMouseOut={() => setPizza(false)}>
+          🍕
+        </Pizza>
+      ) : (
+        <Emoji
+          role="img"
+          aria-label="laptop"
+          onMouseOver={() => setPizza(true)}
+        >
+          💻
+        </Emoji>
+      )}
+
+      <p>
+        My professional career started by enrolling as a full-time student at
+        Lambda School. I was also hired by Lambda School to be a Team Lead. My
+        role was to manage, and mentor a group of new students through their
+        first 16 weeks of learning. After a year of study I applied for my first
+        software engineering job, and was quickly hired by Gulf Winds Credit
+        Union. I am grateful to Lambda School for delivering exactly what they
+        promised, and to Gulf Winds for giving me the opportunity to start a new
+        career.
+      </p>
+
+      <LastParagraph>
+        When I am not staring into screens: <br />I like to play guitar, cook
+        food, and read books, sometimes in that exact order.
+      </LastParagraph>
+    </>
   );
 };
 
