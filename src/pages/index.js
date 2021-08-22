@@ -123,14 +123,16 @@ const AboutText = () => {
       )}
 
       <p>
-        My professional career started by enrolling as a full-time student at
-        Lambda School. I was also hired by Lambda School to be a Team Lead. My
-        role was to manage, and mentor a group of new students through their
-        first 16 weeks of learning. After a year of study I applied for my first
-        software engineering job, and was quickly hired by Gulf Winds Credit
-        Union. I am grateful to Lambda School for delivering exactly what they
-        promised, and to Gulf Winds for giving me the opportunity to start a new
-        career.
+        My journey in tech started by enrolling as a full-time student at Lambda
+        School. It was an intense and rewarding experience to say the least. I
+        was also hired by Lambda School to be a Team Lead. My role was to
+        manage, and mentor a group of 8 students. I led daily standup meetings,
+        pair programming, code review, and debugging sessions focused on HTML,
+        CSS, JavaScript, React, Redux, Express, Jest, REST APIs, SQL, and
+        Python. After a long year of study I applied for my first software
+        engineering job, and was quickly hired by Gulf Winds Credit Union. I am
+        grateful to Lambda School for delivering exactly what they promised, and
+        to Gulf Winds for giving me the opportunity to start a new career.
       </p>
 
       <LastParagraph>
