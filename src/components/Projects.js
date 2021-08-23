@@ -76,16 +76,16 @@ const PromoteableProject = () => {
       <p>2021 - React, Semantic UI, Q2 SDK</p>
       <img alt="Promoteable Screenshot" src={promoteableImg} />
       <p>
-        Built in 3 weeks as part of a team project for CU Build. This is the
-        member facing portion of a marketing promotion system. The Q2 SDK uses
-        Python to call the core banking system on the back end which returns
-        JSON to generate the React components on the front end.
+        Created as part of a team project for CU Build. This is the member
+        facing portion of a marketing promotion system. The Q2 SDK uses Python
+        to call the core banking system on the back end which returns JSON to
+        generate React components on the front end.
       </p>
       <p>
-        The problem we chose to solve is how to attract and retain credit union
-        members. Marketing often uses special promotional rewards to do this,
-        and we wanted to make it easy for them to deploy new promotions in a fun
-        way by gamifying the experience of engaging with credit union services.
+        Created as part of a team project for CU Build. This is the member
+        facing portion of a marketing promotion system. The Q2 SDK uses Python
+        to call the core banking system on the back end which returns JSON to
+        generate React components on the front end.
       </p>
     </ProjectRow>
   );
@@ -98,22 +98,20 @@ const LobbyTrackerProject = () => {
       <p>2020 - React, Semantic UI, Node/Express, Postgres</p>
       <img alt="LobbyTracker Screenshot" src={lobbytrackerImg} />
       <p>
-        When a vendor contract for “Lobby Tracking” software came up for
-        renewal, I was named tech lead for an internal development project and
-        tasked with creating a replacement within 6 months. Working alongside 1
-        other engineer, we were able to deliver all features as promised: on
-        deadline. Leveraging open source technologies allowed us to build and
-        deploy quickly at minimal expense. Our work enabled the credit union to
-        cancel a contract which was costing $40k annually, and our current
-        operating costs are only $250/month.
+        Many service-oriented businesses want to understand the customer
+        experience of their brick and mortar locations. There are many metrics
+        that can be collected to do this. We track things like the amount of
+        time someone spends waiting for service, how many visits are abandoned,
+        and details about each visit.
       </p>
       <p>
-        The business need was to provide reporting to the board of directors
-        about SLA goals in each credit union branch. We track the amount of time
-        a member spends waiting in the lobby for service, how many visits are
-        abandoned, and details about each visit completed. It was well received
-        by our branch staff who liked it better than the old software, they said
-        it looked cleaner and was easier to use.
+        When a vendor contract for “Lobby Tracking” software came up for
+        renewal, I wanted to see if we could create an in-house alternative.
+        Leveraging open source technologies allowed us to build and deploy
+        quickly at minimal expense. The business appreciated the ability to
+        forgo a contract renewal for expensive software, and it was well
+        received by our branch staff who appreciated the cleaner look and
+        improved user experience.
       </p>
     </ProjectRow>
   );
@@ -126,12 +124,11 @@ const WordUpProject = () => {
       <p>2019 - React, Redux, Sass</p>
       <img alt="WordUp Screenshot" src={wordupImg} />
       <p>
-        I designed and built this project after learning the basics of React and
-        Redux at Lambda School. The game is a clone of UpWords, which is a
-        version of Scrabble where the player can stack tiles horizontally AND
-        vertically to build words. I originally built everything using React
-        Class components, but after learning about React Hooks I challenged
-        myself to refactor everything into functional components.
+        Built after learning the basics of React and Redux at Lambda School. It
+        is a clone of UpWords, a version of Scrabble where the player can stack
+        tiles horizontally and vertically to build words. I originally used
+        React Class components, but after learning about React Hooks I
+        challenged myself to refactor everything into functional components.
       </p>
       <p>
         The biggest challenge was programming the scoring system: since tiles
