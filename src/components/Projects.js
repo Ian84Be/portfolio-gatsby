@@ -36,11 +36,12 @@ const ProjectRow = styled.section`
     max-width: 100%;
     height: auto;
     border-radius: 3px;
+    margin-bottom: 1rem;
   }
 
   p {
     align-self: flex-start;
-    margin: 1rem 0 1rem 0;
+    margin: 0 0 1rem 0;
   }
 `;
 
@@ -53,6 +54,9 @@ const ProjectHeader = styled.header`
   font-size: 1.5rem;
   margin: 1rem 0 0 0;
   width: 100%;
+`;
+const ProjectOneliner = styled.p`
+  font-style: italic;
 `;
 
 export default function Projects() {
@@ -73,6 +77,9 @@ const PromoteableProject = () => {
   return (
     <ProjectRow>
       <ProjectHeader>Promoteable</ProjectHeader>
+      <ProjectOneliner>
+        Automated Tool for delivering Marketing Promotions
+      </ProjectOneliner>
       <p>2021 - React, Semantic UI, Q2 SDK</p>
       <img alt="Promoteable Screenshot" src={promoteableImg} />
       <p>
@@ -82,10 +89,11 @@ const PromoteableProject = () => {
         generate React components on the front end.
       </p>
       <p>
-        Created as part of a team project for CU Build. This is the member
-        facing portion of a marketing promotion system. The Q2 SDK uses Python
-        to call the core banking system on the back end which returns JSON to
-        generate React components on the front end.
+        The problem we chose to work on is how to attract and retain credit
+        union members. Marketing teams often use special promotional rewards to
+        do this. We wanted to make it easy for them to deploy new promotions in
+        a fun way by gamifying the experience of engaging with credit union
+        services.
       </p>
     </ProjectRow>
   );
@@ -95,6 +103,9 @@ const LobbyTrackerProject = () => {
   return (
     <ProjectRow>
       <ProjectHeader>LobbyTracker</ProjectHeader>
+      <ProjectOneliner>
+        Collecting real world Customer Metrics with React
+      </ProjectOneliner>
       <p>2020 - React, Semantic UI, Node/Express, Postgres</p>
       <img alt="LobbyTracker Screenshot" src={lobbytrackerImg} />
       <p>
@@ -121,6 +132,7 @@ const WordUpProject = () => {
   return (
     <ProjectRow>
       <ProjectHeader>WordUp</ProjectHeader>
+      <ProjectOneliner>A 3-Dimensional Word Game</ProjectOneliner>
       <p>2019 - React, Redux, Sass</p>
       <img alt="WordUp Screenshot" src={wordupImg} />
       <p>
