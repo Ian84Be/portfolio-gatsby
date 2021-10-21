@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { LightContext } from '../context/LightContext';
 import { Container } from '../styles/Container';
 
-import promoteableImg from '../assets/images/promoteable.png';
+import promoteableImg from '../assets/images/promoDash1.png';
 import wordupImg from '../assets/images/wordup.png';
 import lobbytrackerImg from '../assets/images/lobbytracker.png';
 
@@ -81,12 +81,13 @@ const PromoteableProject = () => {
         Automated Tool for delivering Marketing Promotions
       </ProjectOneliner>
       <p>2021 - React, Semantic UI, Q2 SDK</p>
+      <p>Winner: Best in show, People's choice - CU Build 2021</p>
       <img alt="Promoteable Screenshot" src={promoteableImg} />
       <p>
-        Created as part of a team project for CU Build. This is the member
-        facing portion of a marketing promotion system. The Q2 SDK uses Python
-        to call the core banking system on the back end which returns JSON to
-        generate React components on the front end.
+        Created with a cross-functional team from credit unions across the US.
+        This is the member facing portion of a marketing promotion system. The
+        Q2 SDK uses Python to call the core banking system on the back end which
+        returns JSON to generate React components on the front end.
       </p>
       <p>
         The problem we chose to work on is how to attract and retain credit
